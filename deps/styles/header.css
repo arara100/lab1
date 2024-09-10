@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.login, .register {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.register {
+    background-color: #FF6A3D;
+    color: white;
+    border-radius: 5px;
+}

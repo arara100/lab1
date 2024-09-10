@@ -1,0 +1,14 @@
+footer {
+    padding: 20px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
