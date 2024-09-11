@@ -32,6 +32,12 @@ section.guides p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #e55a2b;
+    transform: scale(1.05);
 }
 
 section.guides .illustration img {
@@ -48,17 +54,22 @@ section.testimonials {
 .testimonials h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .testimonial-item {
-    max-width: 600px;
+    max-width: 1600px;
     margin: 0 auto;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .testimonial-item p {
     font-style: italic;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .rating {
@@ -74,12 +85,8 @@ section.testimonials {
 }
 
 .author img {
-    width: 80px;
-    border-radius: 50%;
-}
-
-.author .info {
-    text-align: left;
+    width: 80%;
+    align-items: flex-end;
 }
 
 .trending {
@@ -107,6 +114,12 @@ section.testimonials {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .story-item img {

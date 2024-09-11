@@ -7,46 +7,66 @@
     <link rel="stylesheet" href="deps/styles/header.css">
     <link rel="stylesheet" href="deps/styles/main.css">
     <link rel="stylesheet" href="deps/styles/footer.css">
+    <link rel="stylesheet" href="deps/styles/respons.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo"><img src="deps/img/logo (1).png" alt="Thousand Sunny"></div>
-            <ul>
+        <nav class="menu">
+            <ul class="menu-left">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Destinations</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Partner</a></li>
             </ul>
-            <div class="auth">
+            <img class="logo" src="deps/img/logo (1).png" alt="Thousand Sunny">
+            <ul class="menu-right">
                 <button class="login">Login</button>
                 <button class="register">Register</button>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </nav>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>      
     </header>
 
     <section class="guides">
-        <div class="content">
-            <h1>Guides by Thousand Sunny</h1>
-            <p>Perfect guides for planning your next adventure and exploring new locations.</p>
-            <button class="download-btn">Download</button>
-        </div>
-        <div class="illustration">
-            <img src="deps/img/Thousand-03.png" alt="Guides Illustration">
+        <div class="guides-item">
+            <div class="content">
+                <h1>Guides by Thousand<br> Sunny</h1>       
+                <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android)<br> is the ultimate resource before and during a trip.</p>
+                <button class="download-btn">Download</button>
+            </div>
+            <div class="illustration">
+                <img src="deps/img/Thousand-03.png" alt="Guides Illustration">
+            </div>
         </div>
     </section>
 
     <section class="testimonials">
         <h2>Testimonials</h2>
         <div class="testimonial-item">
-            <p>“Quisque in lacus a urna fermentum consequat. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus.”</p>
-            <div class="rating">★★★★★</div>
+            <div class="info">
+                <div class="rating">★★★★★</div>
+                <p>“Quisque in lacus a urna fermentum consequat.<br> 
+                    Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus.”</p>
+                <p class="name">Edward Newgate</p>
+                <p class="position">Founder, Circle</p>
+            </div>
             <div class="author">
                 <img src="deps/img/photo.png" alt="Edward Newgate">
-                <div class="info">
-                    <p class="name">Edward Newgate</p>
-                    <p class="position">Founder, Circle</p>
-                </div>
             </div>
         </div>
     </section>
@@ -79,12 +99,14 @@
 
     <footer>
         <div class="social-media">
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="deps/social-net-img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="deps/social-net-img/face.png" alt="Facebook"></a>
+            <a href="#"><img src="deps/social-net-img/linin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="deps/social-net-img/inst.png" alt="Instagram"></a>
+            <a href="#"><img src="deps/social-net-img/you.png" alt="YouTube"></a>
         </div>
         <p>&copy; 2024 Thousand Sunny. All rights reserved.</p>
     </footer>
 </body>
+<script src="deps/js/burger.js"></script>
 </html>
