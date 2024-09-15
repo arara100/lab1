@@ -11,10 +11,6 @@ section.guides {
     background-color: #f9f9f9;
 }
 
-section.guides .content {
-    max-width: 50%;
-}
-
 section.guides h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
