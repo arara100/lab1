@@ -194,31 +194,69 @@ button {
 
 .mobile-menu {
     display: none;
-}
-
-.mobile-menu.active {
-    display: block;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
     position: absolute;
     top: 80px;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    text-align: left; 
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .mobile-menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    margin: 0;
 }
 
 .mobile-menu ul li a {
+    display: block;
     margin: 10px 0;
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    padding: 10px;
 }
 
 .mobile-menu ul li a:hover {
     color: #FF6A3D;
+    padding-left: 20px;
+}
+
+/* Виділення для Login та Register */
+.mobile-menu ul li a.login,
+.mobile-menu ul li a.register {
+    color: #FF6A3D;
+    font-weight: bold;
+    border: 2px solid #FF6A3D;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login:hover{
+    background-color: #FF6A3D;
+    color: #fff;
+}
+
+.register:hover {
+    background-color: #FF6A3D;
+    color: #fff;
 }
